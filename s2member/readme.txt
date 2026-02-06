@@ -3,9 +3,9 @@
 Plugin Name: s2Member Framework
 Plugin URI: https://s2member.com/
 Tags: membership, content restriction, paid subscriptions, members only, paid access
-Version: 250905
-Stable tag: 250905
-Tested up to: 6.9-alpha-60709
+Version: 260127
+Stable tag: 260127
+Tested up to: 7.0-alpha-61539
 Requires at least: 4.2
 Requires PHP: 5.6.2
 Tested up to PHP: 8.3
@@ -176,11 +176,29 @@ Please see: <http://s2member.com/r/translations/>
 
 == Upgrade Notice ==
 
-= v250905 =
+= v260127 =
 
 (Maintenance Release) Upgrade immediately.
 
 == Changelog ==
+
+= v260127 =
+
+- (Framework) **PayPal Enhancement**: Modernized s2Member’s PayPal integration by adding support for PayPal Checkout with their latest REST APIs, Smart Buttons, and webhook event handling. This release introduces PayPal’s current Checkout platform as an optional, reliable alternative to the legacy PayPal Standard buttons. Existing s2Member PayPal button shortcodes continue to work as-is (no edits required). See: _WP Admin > s2Member > PayPal Options > PayPal Checkout (Beta)_. Thanks to the beta testers, especially Sim Architect.
+
+= v260101 =
+
+- (Framework) **Security**: Improved sanitization and normalization of attribute values for the s2Eot, s2Strem and s2Member-Security-Badge  shortcodes.
+
+- (Framework) **Security**: Improved sanitization of replacement values for confirmation and notification emails.
+
+= v251005 =
+
+- (Framework) **Security**: Improved sanitization for Tracking API replacement values.
+
+- (Framework) **Fix**: Use the site URL host instead of HTTP_HOST for proxy key when Skip Domain Check is enabled.
+
+- (Framework) **Fix**: Ensure the Fallback IPN Signup Vars provide a valid item_number for cancellation handling.
 
 = v250905 =
 
